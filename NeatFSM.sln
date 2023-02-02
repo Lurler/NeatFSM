@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeatFSM", "NeatFSM\NeatFSM.csproj", "{233709A2-6E9E-4A08-BD37-910D3D3EA1E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FSMTest", "FSMTest\FSMTest.csproj", "{F423B4D6-E99D-49D7-828A-2C26CC3469E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{233709A2-6E9E-4A08-BD37-910D3D3EA1E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{233709A2-6E9E-4A08-BD37-910D3D3EA1E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{233709A2-6E9E-4A08-BD37-910D3D3EA1E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{233709A2-6E9E-4A08-BD37-910D3D3EA1E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F423B4D6-E99D-49D7-828A-2C26CC3469E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F423B4D6-E99D-49D7-828A-2C26CC3469E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F423B4D6-E99D-49D7-828A-2C26CC3469E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F423B4D6-E99D-49D7-828A-2C26CC3469E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CEAA9CB-D42E-4AF4-9EC3-19251ADC2C82}
+	EndGlobalSection
+EndGlobal
