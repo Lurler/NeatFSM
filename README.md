@@ -46,11 +46,11 @@ You might also want to create a data container for your FSM instances, so the FS
 public class CustomDataContainer
 {
 	// this field will reference the enemy instance
-    public EnemyClass enemyReference;
+	public EnemyClass enemyReference;
 }
 ```
 
-Next, create the FSMBuilder builder. There are two ways to do that - with and without data container.
+Next, create the `FSMBuilder`. There are two ways to do that: with and without data container.
 ```csharp
 // create state machine builder with custom data container
 FSMBuilder<States, Events, CustomContainer> fsmBuilder = new();
@@ -94,7 +94,7 @@ private static bool HasAmmo()
 }
 ```
 
-We can also define general OnTransition callback to monitor FSM behaviour if needed.
+We can also define general `OnTransition` callback to monitor FSM behaviour if needed.
 ```csharp
 // Generic on transition method can be defined for the whole FSM.
 fsmBuilder.OnTransition = (fsm, from, to) =>
@@ -110,7 +110,7 @@ If we are creating a very complex FSM structure we can export it to DOT graph to
 Console.WriteLine(fsmBuilder.ToDotGraph());
 ```
 
-Finally, when we are done we can build an actual instance of runnable FSM
+Finally, when we are done we can build an actual instance of runnable FSM. The second argument is the initial state of FSM (in this case `States.Wait`).
 ```csharp
 // Build the FSM to be executed.
 var fsmInstance = fsmBuilder.Build("Enemy FSM instance", States.Wait);
@@ -123,7 +123,7 @@ fsmInstance.Data.monsterReference = monsterInstance;
 fsmInstance.Data.customField = "Yay, it's working!";
 ```
 
-Finally, just run the fsm.
+Finally, just run the FSM.
 ```csharp
 // put this inside your update loop
 fsmInstance.Update();
